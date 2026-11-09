@@ -1,0 +1,19 @@
+{
+  "protocol": "Aave V3 (Ethereum core market)",
+  "network": "Ethereum mainnet (chainId 1)",
+  "block": 26375467,
+  "blockTimeUTC": "2026-11-09T06:14:11.000Z",
+  "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+  "asset": "USDC 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+  "aToken": "0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c",
+  "reserveLastUpdatedUTC": "2026-11-09T06:14:11.000Z",
+  "raw": {
+    "currentLiquidityRate_ray": "37059442525453104577460286",
+    "currentVariableBorrowRate_ray": "44398726828193200233916016"
+  },
+  "supplyAPR": "3.7059%",
+  "supplyAPY": "3.7755%",
+  "variableBorrowAPR": "4.4399%",
+  "variableBorrowAPY": "4.5399%",
+  "totalSupplied": "2,841,489,907.502 USDC"
+}
