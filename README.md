@@ -2,7 +2,7 @@
 
 A tiny read-only script that asks the **Aave V3 Pool contract on Ethereum mainnet** for an asset's current lending rates and converts them into human-readable APR/APY.
 
-No wallet, no private key, no transactions — every call is an `eth_call` (view function), so it costs nothing and changes nothing on-chain.
+No wallet, no private key, no transactions. Every call is an `eth_call` (view function), so it costs nothing and changes nothing on-chain.
 
 ## Run it
 
@@ -39,7 +39,11 @@ All reads after step 2 are pinned to the same block so the numbers describe one 
 
 ## Sample output
 
-See `sample-output.json` (Ethereum mainnet, block 26,375,363, 2026-11-09 05:53:11 UTC).
+See `sample-output.json` (Ethereum mainnet, block 26,375,467, 2026-11-09 06:14:11 UTC). USDC supply APR 3.7059% (APY 3.7755%), variable borrow APR 4.4399% (APY 4.5399%), ~2.84B USDC supplied.
+
+## Limitations
+
+The script trusts the RPC provider to return true chain state and cannot detect a dishonest node. It also assumes Aave keeps the current `getReserveData` struct layout; an upgrade that changes it would break decoding.
 
 ## Sources
 
